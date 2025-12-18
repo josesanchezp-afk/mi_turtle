@@ -4,15 +4,83 @@ Este proyecto contiene scripts simples en Python que simulan el movimiento de un
 
 ## Archivos
 
-- **Untitled-1.py**: Simula el movimiento horizontal de una tortuga. Pide al usuario la cantidad de pasos, imprime un mensaje y dibuja una línea de guiones seguida de una flecha (`>`) hacia la derecha.
+### Untitled-1.py
+Simula el movimiento horizontal de una tortuga. Pide al usuario la cantidad de pasos, imprime un mensaje y dibuja una línea de guiones seguida de una flecha (`>`) hacia la derecha.
 
-- **Untitled-2.py**: Simula el movimiento vertical de la tortuga. Pide pasos, imprime el mensaje y dibuja líneas verticales (`|`) con una flecha hacia abajo (`v`).
+```python
+paso=int(input("Ingrese cantidad de pasos de la tortuga "))
+print("La tortuga avanzará  "   + str(paso) + "pasos")
+print("-"*paso +">")
+```
 
-- **Untitled-3.py**: Combina movimientos horizontal y vertical. Pide pasos horizontales y verticales, e imprime una representación en L con líneas y flecha.
+### Untitled-2.py
+Simula el movimiento vertical de la tortuga. Pide pasos, imprime el mensaje y dibuja líneas verticales (`|`) con una flecha hacia abajo (`v`).
 
-- **Untitled-4.1.py**: Define funciones para movimientos derecha y abajo con valores fijos (5 pasos cada uno). Dibuja guiones para derecha y líneas verticales con espacios para abajo.
+```python
+paso=int(input("Ingrese cantidad de pasos de la tortuga "))
+print("La tortuga avanzará  "   + str(paso) + "pasos")
+print("|\n"*paso +"v")
+```
 
-- **Untitled-5.py**: Similar al anterior, pero con una variable `escalones` que incrementa para simular un patrón de escalones o zigzag, ejecutando dos secuencias de movimientos.
+### Untitled-3.py
+Combina movimientos horizontal y vertical. Pide pasos horizontales y verticales, e imprime una representación en L con líneas y flecha.
+
+```python
+paso=int(input("Ingrese cantidad de pasos de la tortuga "))
+print("La tortuga avanzará  "   + str(paso) + "pasos")
+giro=int(input("Ingrese cantidad de pasos hacia abajo  "))
+print("La tortuga avanzará  "   + str(giro) + "pasos")
+print("|\n"* paso +"-"* giro +">")
+```
+
+### Untitled-4.1.py
+Define funciones para movimientos derecha y abajo con valores fijos (5 pasos cada uno). Dibuja guiones para derecha y líneas verticales con espacios para abajo.
+
+```python
+Derecha = 5
+izquierda = 5
+
+def derecha(n):
+  print("-" * n + ">")
+def abajo(n):
+  print((" " * Derecha + "|\n") * n + (" " * Derecha + "V"))
+
+derecha(Derecha)
+abajo(izquierda)
+```
+
+### Untitled-5.py
+Similar al anterior, pero con una variable `escalones` que incrementa para simular un patrón de escalones o zigzag, ejecutando secuencias de movimientos.
+
+```python
+derechar = 5
+izquierda = 5
+escalones = 5
+
+def derecha(n):
+  global escalones
+  espaciosIzquierda = " " * derechar * escalones
+  print(espaciosIzquierda + "-" * n + ">")
+def abajo(n):
+  global escalones
+  espaciosIzquierda = " " * derechar * escalones
+  print((espaciosIzquierda + (" " * derechar + "|\n")) * n + (espaciosIzquierda + " " * derechar + "V"))
+  escalones = escalones + 1
+
+derecha(derechar)
+abajo(izquierda)
+
+derecha(derechar)
+abajo(izquierda)
+
+derecha(derechar)
+abajo(izquierda)
+
+derecha(derechar)
+abajo(izquierda)
+derecha(derechar)
+abajo(izquierda)
+```
 
 ## Uso
 
