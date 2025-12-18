@@ -158,4 +158,4 @@ abajo(izquierda)
 
 ## Uso
 
-Ejecuta cualquiera de los scripts con Python (ej. `python Untitled-1.py`) y sigue las instrucciones en pantalla para ingresar los pasos.
+Ejecuta cualquiera de los scripts con Python (ej. `python mi_turtle/Untitled-1.py`) y sigue las instrucciones en pantalla para ingresar los pasos.
