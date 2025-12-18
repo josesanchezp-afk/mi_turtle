@@ -13,6 +13,12 @@ print("La tortuga avanzará  "   + str(paso) + "pasos")
 print("-"*paso +">")
 ```
 
+**Ejemplo de salida (con input 5):**
+```
+Ingrese cantidad de pasos de la tortuga La tortuga avanzará  5pasos
+----->
+```
+
 ### Untitled-2.py
 Simula el movimiento vertical de la tortuga. Pide pasos, imprime el mensaje y dibuja líneas verticales (`|`) con una flecha hacia abajo (`v`).
 
@@ -20,6 +26,15 @@ Simula el movimiento vertical de la tortuga. Pide pasos, imprime el mensaje y di
 paso=int(input("Ingrese cantidad de pasos de la tortuga "))
 print("La tortuga avanzará  "   + str(paso) + "pasos")
 print("|\n"*paso +"v")
+```
+
+**Ejemplo de salida (con input 3):**
+```
+Ingrese cantidad de pasos de la tortuga La tortuga avanzará  3pasos
+|
+|
+|
+v
 ```
 
 ### Untitled-3.py
@@ -31,6 +46,15 @@ print("La tortuga avanzará  "   + str(paso) + "pasos")
 giro=int(input("Ingrese cantidad de pasos hacia abajo  "))
 print("La tortuga avanzará  "   + str(giro) + "pasos")
 print("|\n"* paso +"-"* giro +">")
+```
+
+**Ejemplo de salida (con inputs 2 y 4):**
+```
+Ingrese cantidad de pasos de la tortuga La tortuga avanzará  2pasos
+Ingrese cantidad de pasos hacia abajo  La tortuga avanzará  4pasos
+|
+|
+---->
 ```
 
 ### Untitled-4.1.py
@@ -47,6 +71,17 @@ def abajo(n):
 
 derecha(Derecha)
 abajo(izquierda)
+```
+
+**Ejemplo de salida:**
+```
+----->
+     |
+     |
+     |
+     |
+     |
+     V
 ```
 
 ### Untitled-5.py
@@ -80,6 +115,45 @@ derecha(derechar)
 abajo(izquierda)
 derecha(derechar)
 abajo(izquierda)
+```
+
+**Ejemplo de salida:**
+```
+                         ----->
+                              |
+                              |
+                              |
+                              |
+                              |
+                              V
+                              ----->
+                                   |
+                                   |
+                                   |
+                                   |
+                                   |
+                                   V
+                                   ----->
+                                        |
+                                        |
+                                        |
+                                        |
+                                        |
+                                        V
+                                        ----->
+                                             |
+                                             |
+                                             |
+                                             |
+                                             |
+                                             V
+                                             ----->
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  V
 ```
 
 ## Uso
