@@ -1,0 +1,5 @@
+paso=int(input("Ingrese cantidad de pasos de la tortuga "))
+print("La tortuga avanzará  "   + str(paso) + "pasos")
+giro=int(input("Ingrese cantidad de pasos hacia abajo  "))
+print("La tortuga avanzará  "   + str(giro) + "pasos")
+print("|\n"* paso +"-"* giro +">") 
